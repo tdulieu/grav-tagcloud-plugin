@@ -2,7 +2,7 @@
 
 The **tagcloud** plugin displays a tag cloud on your [Grav][grav] site. It is mostly useful with a tag-based taxonomy for posts on a blog.
 
-![Tag Cloud](E:\wamp64\www\blog\user\plugins\tagcloud\assets/readme.png)
+![Tag Cloud](/assets/readme.png)
 
 A live example of the **tagcloud** plugin is available on my Grav blog [Antyos][antyos] (click on the tags icon in the sidebar).
 
