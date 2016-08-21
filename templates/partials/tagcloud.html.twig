@@ -1,0 +1,15 @@
+{#-
+    @var config
+    @var base_url
+-#}
+{% if tag_cloud|length %}
+    {% set tax_url = base_url ~ '/' ~ config.plugins.tagcloud.taxonomy ~ config.system.param_sep %}
+    {% set unit = config.plugins.tagcloud.unit|default('px') %}
+    {% set show_count = config.plugins.tagcloud.show_count %}
+
+    <ul class="tag-cloud">
+        {% for tag, data in tag_cloud %}
+            <li><a href="{{ tax_url ~ tag }}" style="font-size:{{ data.size ~ unit }}">{{ tag|capitalize }}{% if show_count %} ({{ data.count }}){% endif %}</a></li>
+        {% endfor %}
+    </ul>
+{% endif %}

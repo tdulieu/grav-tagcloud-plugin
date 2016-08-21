@@ -1,0 +1,117 @@
+name: Tag Cloud
+version: 1.0.0
+description: "Displays a tag cloud on your Grav Site"
+icon: tags
+author:
+  name: Thierry Dulieu
+  email: contact@antyos.fr
+  url: http://www.antyos.fr
+homepage: https://github.com/tdulieu/grav-plugin-tagcloud
+demo: http://www.antyos.fr
+keywords: taxonomy, tags, sidebar, widget
+bugs: https://github.com/tdulieu/grav-plugin-tagcloud/issues
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    taxonomy:
+      type: text
+      label: PLUGIN_TAGCLOUD.TAXONOMY.LABEL
+      help: PLUGIN_TAGCLOUD.TAXONOMY.HELP
+      placeholder: PLUGIN_TAGCLOUD.TAXONOMY.PLACEHOLDER
+      default: 'tag'
+      validate:
+        type: string
+
+    min_size:
+      type: text
+      label: PLUGIN_TAGCLOUD.MIN_SIZE.LABEL
+      help: PLUGIN_TAGCLOUD.MIN_SIZE.HELP
+      placeholder: PLUGIN_TAGCLOUD.MIN_SIZE.PLACEHOLDER
+      default: 12
+      validate:
+        type: float
+        min: 0
+
+    max_size:
+      type: text
+      label: PLUGIN_TAGCLOUD.MAX_SIZE.LABEL
+      help: PLUGIN_TAGCLOUD.MAX_SIZE.HELP
+      placeholder: PLUGIN_TAGCLOUD.MAX_SIZE.PLACEHOLDER
+      default: 36
+      validate:
+        type: float
+        min: 0
+
+    unit:
+      type: text
+      label: PLUGIN_TAGCLOUD.UNIT.LABEL
+      help: PLUGIN_TAGCOULD.UNIT.HELP
+      placeholder: PLUGIN_TAGCLOUD.UNIT.PLACEHOLDER
+      default: 'px'
+      validate:
+        type: string
+
+    count:
+      type: text
+      label: PLUGIN_TAGCLOUD.COUNT.LABEL
+      help: PLUGIN_TAGCLOUD.COUNT.HELP
+      placeholder: PLUGIN_TAGCLOUD.COUNT.PLACEHOLDER
+      default: 0
+      validate:
+        type: int
+        min: 0
+
+    show_count:
+      type: toggle
+      label: PLUGIN_TAGCLOUD.SHOW_COUNT.LABEL
+      help: PLUGIN_TAGCLOUD.SHOW_COUNT.HELP
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.YES
+        0: PLUGIN_ADMIN.NO
+      validate:
+        type: bool
+
+    order_by:
+      type: toggle
+      label: PLUGIN_TAGCLOUD.ORDER_BY.LABEL
+      help: PLUGIN_TAGCLOUD.ORDER_BY.HELP
+      default: title
+      options:
+        name: PLUGIN_TAGCLOUD.ORDER_BY.OPTIONS.NAME
+        size: PLUGIN_TAGCLOUD.ORDER_BY.OPTIONS.SIZE
+
+    order_dir:
+      type: toggle
+      label: PLUGIN_TAGCLOUD.ORDER_DIR.LABEL
+      help: PLUGIN_TAGCLOUD.ORDER_DIR.HELP
+      default: asc
+      options:
+        asc: PLUGIN_TAGCLOUD.ORDER_DIR.OPTIONS.ASCENDING
+        desc: PLUGIN_TAGCLOUD.ORDER_DIR.OPTIONS.DESCENDING
+
+    built_in_css:
+      type: toggle
+      label: PLUGIN_TAGCLOUD.BUILT_IN_CSS.LABEL
+      help: PLUGIN_TAGCLOUD.BUILT_IN_CSS.HELP
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.YES
+        0: PLUGIN_ADMIN.NO
+      validate:
+        type: bool

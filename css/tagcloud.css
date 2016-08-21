@@ -1,0 +1,11 @@
+.tag-cloud {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    text-align: center;
+    list-style: none;
+}
+
+.tag-cloud li {
+    display: inline;
+}

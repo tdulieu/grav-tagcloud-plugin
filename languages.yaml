@@ -1,0 +1,80 @@
+en:
+  PLUGIN_TAGCLOUD:
+    TAXONOMY:
+      LABEL: "Taxonomy"
+      HELP: "Defines which taxonomy term is used to build the tag cloud."
+      PLACEHOLDER: "tag"
+    MIN_SIZE:
+      LABEL: "Min Font Size"
+      HELP: "Font size of the smallest tag."
+      PLACEHOLDER: "12"
+    MAX_SIZE:
+      LABEL: "Max Font Size"
+      HELP: "Font size of the largest tag."
+      PLACEHOLDER: "36"
+    UNIT:
+      LABEL: "Unit"
+      HELP: "Font size unité"
+      PLACEHOLDER: "px"
+    COUNT:
+      LABEL: "Number of Tags to Display"
+      HELP: "Maximum number of tags to display. Set to zero to display all tags."
+      PLACEHOLDER: "0"
+    SHOW_COUNT:
+      LABEL: "Show count"
+      HELP: "Display the number of occurences of each tag."
+    ORDER_BY:
+      LABEL: "Order By"
+      HELP: "Field by which to sort the tags."
+      OPTIONS:
+        NAME: "Name"
+        SIZE: "Size"
+    ORDER_DIR:
+      LABEL: "Order"
+      HELP: "How tags are sorted."
+      OPTIONS:
+        ASCENDING: "Ascending"
+        DESCENDING: "Descending"
+    BUILT_IN_CSS:
+      LABEL: "Use built in CSS"
+      HELP: "Include default plugin stylesheet."
+
+fr:
+  PLUGIN_TAGCLOUD:
+    TAXONOMY:
+      LABEL: "Taxonomie"
+      HELP: "Définit quel élément de taxonomie est utilisé pour créer le nuage de mots-clés."
+    MIN_SIZE:
+      LABEL: "Taille minimale"
+      HELP: "Taille de police du plus petit mots-clé."
+      PLACEHOLDER: "12"
+    MAX_SIZE:
+      LABEL: "Taille maximale"
+      HELP: "Taille de police du plus grand mots-clé."
+      PLACEHOLDER: "36"
+    UNIT:
+      LABEL: "Unité"
+      HELP: "Unité de la taille de police"
+      PLACEHOLDER: "px"
+    COUNT:
+      LABEL: "Nombre de mots-clés affichés"
+      HELP: "Nombre maximum de mots-clés à afficher. La valeur 0 affiche tous les mots-clés."
+      PLACEHOLDER: "0"
+    SHOW_COUNT:
+      LABEL: "Afficher le nombre d'occurences"
+      HELP: "Affiche le nombre d'occurences de chaque mot-clé."
+    ORDER_BY:
+      LABEL: "Trier par"
+      HELP: "Champ selon lequel les mot-clés sont triés."
+      OPTIONS:
+        NAME: "Nom"
+        SIZE: "Taille"
+    ORDER_DIR:
+      LABEL: "Ordre"
+      HELP: "Comment les mots-clés sont triés."
+      OPTIONS:
+        ASCENDING: "Croissant"
+        DESCENDING: "Décroissant"
+    BUILT_IN_CSS:
+      LABEL: "CSS par défault"
+      HELP: "Inclure la feuille de style par défaut."

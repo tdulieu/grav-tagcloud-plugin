@@ -1,0 +1,10 @@
+enabled: true       # Set to false to completely disable this plugin
+taxonomy: tag       # Taxonomy term used for building the tag cloud
+min_size: 12        # Minimal tag font size
+max_size: 36        # Maximal tag font size
+unit: px            # Font size unit
+count: 0            # Number of tags to display (0 to show all tags)
+order_by: name      # Sort criteria (name or count)
+order_dir: asc      # Sort order (asc or desc)
+show_count: false   # Display the number of occurences near each tag
+built_in_css: true  # Use the provided stylesheet
